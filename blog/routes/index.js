@@ -68,7 +68,6 @@ app.get('/', function (req, res) {
         } 
 
         Post.getTags(function (err, tags) {
-            console.log(tags);
             res.render('index', {
                 title: '白色石头的博客',
                 posts: posts,
@@ -330,7 +329,8 @@ app.post('/edit/:name/:day/:title', function (req, res) {
                 return res.redirect('/');
             }
             res.render('archive', {
-                title: '存档',
+                title: '白色石头的博客',
+                archivetitle: '存档',
                 posts: posts,
                 user: req.session.user,
                 success: req.flash('success').toString(),
@@ -346,7 +346,8 @@ app.post('/edit/:name/:day/:title', function (req, res) {
                 return res.redirect('/');
             }
             res.render('tags', {
-                title: '标签',
+                title: '白色石头的博客',
+                tagstitle: '标签',
                 posts: posts,
                 user: req.session.user,
                 success: req.flash('success').toString(),
@@ -362,7 +363,8 @@ app.post('/edit/:name/:day/:title', function (req, res) {
                 return res.redirect('/');
             }
             res.render('tag', {
-                title: 'TAG:' + req.params.tag,
+                title:'白色石头的博客',
+                tagtitle: req.params.tag,
                 posts: posts,
                 user: req.session.user,
                 success: req.flash('success').toString(),

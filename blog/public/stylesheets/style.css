@@ -1,5 +1,7 @@
-/* inspired by http://yihui.name/cn/ */
-*{padding:0;margin:0;}
+body, p,pre,code,p,h1,h2,h3,h3,ul,li,a,div,table,tr,td,input {
+    margin: 0;
+    padding: 0;
+}
 body{
 	font-size:14px;
 	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -10,13 +12,17 @@ a {
 }
 
 .middle {
-	margin-left: 0;
-	margin-right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .border {
 	border-left: 5px solid #666;
 	padding-left: 10px;
+}
+
+p {
+    line-height: 1.4em;
 }
 
 pre {
@@ -65,7 +71,7 @@ pre code {
 }
 
 .text {
-    height: 24px;
+    height: 20px;
     width: 220px;
     padding: 6px 12px;
     font-size: 14px;
@@ -115,6 +121,10 @@ nav .nav_item a {
     display: block;
     padding: 20px 24px;
     position: relative;
+}
+
+header {
+    background-color: #f7f7f7;
 }
 
 header .wrapper {
@@ -173,6 +183,7 @@ header .wrapper h1 {
 
 .friendlinks .fl_item {
 	font-size: 16px;
+    line-height: 1.5em;
 }
 
 .readBooks {
@@ -181,6 +192,13 @@ header .wrapper h1 {
 
 .readBooks table {
 	margin-top: 10px;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.readBooks table img {
+	width: 102px;
+	height: 137px;
 }
 
 article{
@@ -199,13 +217,38 @@ article .posttitle {
 	margin-bottom: 8px;
 }
 
+.comments .comment_item {
+    background-color: #F5F5F5;
+    margin: 12px 0;
+    padding: 30px;
+}
+
+.comments .conmment_content {
+    margin: 10px 0;
+}
+
+.archive h2 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.archive ul {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.archive ul time {
+    margin-right: 8px;
+}
+
+.content .tags {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
 .edit{margin:3px;padding:2px 5px;border-radius:3px;background-color:#f3f3f3;color:#333;font-size:13px;}
 .edit:hover{text-decoration:none;background-color:#f00;color:#fff;-webkit-transition:color .2s linear;}
 .prepage a{float:left;text-decoration:none;padding:.5em 1em;color:#ff0000;font-weight:bold;}
 .nextpage a{float:right;text-decoration:none;padding:.5em 1em;color:#ff0000;font-weight:bold;}
 .prepage a:hover,.nextpage a:hover{text-decoration:none;background-color:#ff0000;color:#f9f9f9;-webkit-transition:color .2s linear;}
-
-
-.archive{list-style:none;line-height:28px;}
-.archive h3{margin:0.5em 0;}
-.archive time{float:left;font-size:14px;color:#999999;margin-right:1.2em;}
