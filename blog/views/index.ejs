@@ -16,8 +16,11 @@
                 <% } %>
             <% }) %>
         </p>
-        <p><%- post.post %></p>
-        <p class="info">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></p>
+        <p>
+            <%- post.post %>
+            <div><a href="u/<%= post.name %>/<%= post.time.day %>/<%= post.title %>">阅读全文</a></div>
+        </p>
+        <div class="info">阅读：<%= post.pv %> | 评论：<%= post.comments.length %></div>
     </article>    
 <% }) %>
 <%- include paging %>

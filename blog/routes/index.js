@@ -65,7 +65,16 @@ app.get('/', function (req, res) {
   Post.getTen(null, page, function (err, posts, total) {
         if (err) {
             posts = [];
-        } 
+        }
+        // 跌串，查看更多
+        posts.forEach(function (postobj) {
+            var poststr = postobj.post;
+            if (poststr.indexOf('SEPARATOR') > 0) {
+                var sindex = poststr.indexOf('SEPARATOR');
+                postsub = poststr.substring(0, sindex);
+                postobj.post = postsub;
+            }
+        });
 
         Post.getTags(function (err, tags) {
             res.render('index', {

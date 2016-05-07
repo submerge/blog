@@ -253,6 +253,17 @@ article a {
     line-height: 1.5em;
 }
 
+.about_bg {
+    text-align: center;
+}
+.about p {
+    font-size: 35px;
+    text-align: center;
+}
+.about_bg  img{
+    width: 700px;
+}
+
 .edit{margin:3px;padding:2px 5px;border-radius:3px;background-color:#f3f3f3;color:#333;font-size:13px;}
 .edit:hover{text-decoration:none;background-color:#f00;color:#fff;-webkit-transition:color .2s linear;}
 .prepage a{float:left;text-decoration:none;padding:.5em 1em;color:#ff0000;font-weight:bold;}
@@ -265,6 +276,7 @@ article a {
 
 @media only screen and (max-width: 1023px) {
 
+    /*index*/
     header .wrapper h1 {
         font-size: 40px;
     }
@@ -283,5 +295,15 @@ article a {
         width: auto;
         float: left;
         padding-left: 10px;
+    }
+
+    /*about*/
+    .about p {
+        font-size: 28px;
+        text-align: left;
+    }
+    .about img {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
