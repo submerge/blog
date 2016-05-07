@@ -22,7 +22,7 @@ a {
 }
 
 p {
-    line-height: 1.4em;
+    line-height: 1.6em;
 }
 
 pre {
@@ -104,10 +104,6 @@ pre code {
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
-nav {
-	width: 1235px;
-}
-
 nav .nav_list {
 	text-align: center;
 }
@@ -134,10 +130,6 @@ header .wrapper {
 header .wrapper h1 {
 	text-align: center;
 	font-size: 70px;
-}
-
-.content {
-	min-width: 1235px;
 }
 
 .content .wrapper {
@@ -205,8 +197,22 @@ article{
 	font-size:16px;
 	padding-top:18px
 }
+
+article p {
+    text-indent: 2em;
+}
+
+article h3 {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
 article .posttitle {
 	font-size: 36px;
+}
+
+article a {
+    color: #0095dd
 }
 .info{
 	font-size:14px;
@@ -252,3 +258,30 @@ article .posttitle {
 .prepage a{float:left;text-decoration:none;padding:.5em 1em;color:#ff0000;font-weight:bold;}
 .nextpage a{float:right;text-decoration:none;padding:.5em 1em;color:#ff0000;font-weight:bold;}
 .prepage a:hover,.nextpage a:hover{text-decoration:none;background-color:#ff0000;color:#f9f9f9;-webkit-transition:color .2s linear;}
+
+
+
+/*移动端适配*/
+
+@media only screen and (max-width: 1023px) {
+
+    header .wrapper h1 {
+        font-size: 40px;
+    }
+
+    .content .wrapper {
+        margin: 0 5px;
+    }
+    .content {
+        width: 100%;
+    }
+    .content .main {
+        width: 100%;
+    }
+
+    .content .aside {
+        width: auto;
+        float: left;
+        padding-left: 10px;
+    }
+}
