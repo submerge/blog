@@ -248,6 +248,9 @@ app.get('/', function (req, res) {
                 req.flash('error', err); 
                 return res.redirect('/');
             }
+            var subpost = post.post.replace(/SEPARATOR/g,'');
+            post.post = subpost;
+            console.log(post.post);
             res.render('article', {
                 title: '白色石头的博客',
                 posttitle: req.params.title,

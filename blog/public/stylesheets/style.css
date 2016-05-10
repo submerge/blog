@@ -134,7 +134,8 @@ header .wrapper h1 {
 
 .content .wrapper {
 	overflow: hidden;
-	margin: 0 35px;
+	max-width: 1320px;
+    padding: 0 30px;
 }
 
 .content .main {
@@ -214,6 +215,17 @@ article .posttitle {
 article a {
     color: #0095dd
 }
+article ul, article ol {
+    list-style-type: decimal;
+    padding: 0 40px;
+    margin: 8px 0;
+}
+article em {
+    font-weight: bold;
+}
+article p img {
+    margin-left: -2em;
+}
 .info{
 	font-size:14px;
 	margin: 15px 0;
@@ -283,6 +295,7 @@ article a {
 
     .content .wrapper {
         margin: 0 5px;
+        padding: 0;
     }
     .content {
         width: 100%;
@@ -295,6 +308,10 @@ article a {
         width: auto;
         float: left;
         padding-left: 10px;
+    }
+
+    article img {
+        width: 100%;
     }
 
     /*about*/
